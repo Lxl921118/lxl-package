@@ -1,3 +1,10 @@
+@props([
+    /**
+     * Image source URL
+     * @var string|null
+    */
+    'imgSrc' => null,
+])
 <div class="hover-3d">
   <!-- content -->
   <figure class="max-w-100 rounded-2xl">
