@@ -27,10 +27,8 @@ class LxlPackageProvider extends ServiceProvider
         // 註冊匿名元件（適用於 blade 檔案）
         Blade::anonymousComponentPath(__DIR__ . '/../Resources/views/components', 'lxl-package');
 
-        // 註冊類別元件（使用命名空間，IDE 才能追蹤到 class）
-        $this->loadViewComponentsAs('lxl-package', [
-            \Lxl\LxlPackage\View\Components\Button::class,
-        ]);
+        // 註冊類別元件命名空間（自動解析所有元件，支援巢狀目錄）
+        Blade::componentNamespace('Lxl\\LxlPackage\\View\\Components', 'lxl-package');
 
         // 發布資源
         $this->publishes([
