@@ -3,6 +3,7 @@
     /**
      * @var string Button 顯示類型
      * button || submit || reset
+     * @default 'button' 
      */
     'btnType' => 'button',
 
