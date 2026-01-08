@@ -8,19 +8,20 @@ use Illuminate\View\Component;
 
 class Button extends Component
 {
-
     /**
-     * 按鈕的類型(primary)
+     * 按鈕的類型
      * @var string
      */
-    public $type;
+    public string $type;
 
     /**
      * Create a new component instance.
+     * 
+     * @param string $type 按鈕類型 (primary, secondary, danger)
      */
-    public function __construct()
+    public function __construct(string $type = 'primary')
     {
-        $this->type = 'primary';
+        $this->type = $type;
     }
 
     /**
@@ -28,6 +29,6 @@ class Button extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('components.button');
+        return view('lxl-package::components.button');
     }
 }
