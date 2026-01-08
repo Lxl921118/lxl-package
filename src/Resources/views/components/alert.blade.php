@@ -16,5 +16,5 @@
 ])
 
 <div>
-    {{ $slot ?? $message }}
+    {{ $slot->isEmpty() ? $message : $slot }}
 </div>
