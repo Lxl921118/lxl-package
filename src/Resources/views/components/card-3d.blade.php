@@ -1,10 +1,10 @@
 {{-- resources/views/components/card-3d.blade.php --}}
 @props([
-    /**
-     * Image source URL
-     * @var string|null
-    */
-    'imgSrc' => null,
+  /**
+   * Image source URL
+   * @var string|null
+   */
+  'imgSrc' => null,
 ])
 <div class="hover-3d">
   <!-- content -->
