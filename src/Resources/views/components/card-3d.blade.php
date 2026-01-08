@@ -2,14 +2,14 @@
 @props([
   /**
    * Image source URL
-   * @var string|null
+   * @var string|null $imgSrc Image 來源網址
    */
-  'imgSrc' => null,
+  'imgSrc' => 'https://img.daisyui.com/images/stock/creditcard.webp',
 ])
 <div class="hover-3d">
   <!-- content -->
   <figure class="max-w-100 rounded-2xl">
-    <img src="{{ $imgSrc ?? 'https://img.daisyui.com/images/stock/creditcard.webp' }}" alt="3D card" />
+    <img src="{{ $imgSrc }}" alt="3D card" />
   </figure>
   <!-- 8 empty divs needed for the 3D effect -->
   <div></div>
