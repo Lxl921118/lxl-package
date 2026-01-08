@@ -1,3 +1,6 @@
+@php
+    /** @var Lxl\LxlPackage\View\Components\Alert $Alert */
+@endphp
 @props([
     /**
      * Alert 類型
@@ -9,5 +12,5 @@
     'type' => 'info',
 ])
 <div>
-    {{ $type }}
+    {{ $Alert->type }}
 </div>
