@@ -1,9 +1,9 @@
 {{-- resources/views/components/button.blade.php --}}
 @props([
     /**
-     * Button type
+     * @var string Button 顯示文字
      */
-    'type' => 'button',
+    'type' => 'button || submit || reset',
 ])
 
-<button type="{{ $type }}"> </button>
+<button type="{{ $type }}">{{ $text }}</button>
