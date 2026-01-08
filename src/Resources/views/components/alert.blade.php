@@ -9,8 +9,15 @@
      * 
      * @var string
      */
+
     'type' => 'info',
+
+    /**
+     * Alert 訊息內容
+     * @var string
+     */
+    'message' => '這是一個提示訊息。',
 ])
 <div>
-    {{ $Alert->type }}
+    {{ $Alert->type }}、{{ $Alert->message }}
 </div>

@@ -23,14 +23,19 @@ class Alert extends Component
      * @var string
      */
     public string $type;
+
     /**
-     * Create a new component instance.
-     * 
-     * @param string $type Alert 類型，預設為 'info'
+     * Alert 訊息內容
+     * @var string
      */
-    public function __construct(string $type = 'info')
+    public string $message;
+
+
+
+    public function __construct(string $type = 'info', string $message = '這是一個提示訊息。')
     {
         $this->type = $type;
+        $this->message = $message;
     }
 
     /**
