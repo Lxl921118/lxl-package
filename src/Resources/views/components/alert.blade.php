@@ -14,7 +14,8 @@
     'type' => 'info',
     'message' => '這是一個提示訊息。',
 ])
-
 <div>
-    {{ $slot->isEmpty() ? $message : $slot }}
+    <div class="alert alert-{{ $type }}">
+        {{ $message }}
+    </div>
 </div>
