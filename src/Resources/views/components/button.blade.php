@@ -1,9 +1,18 @@
 {{-- resources/views/components/button.blade.php --}}
+@php
+/**
+ * Button 元件
+ *
+ * @var string $btnType Button 顯示類型
+ * @var string $btnStyle Button 樣式類型
+ * @var string $btnText Button 顯示文字
+ */
+@endphp
+
 @props([
     /**
      * @var string Button 顯示類型
      * button || submit || reset
-     * @default 'button' 
      */
     'btnType' => 'button',
 
