@@ -1,3 +1,4 @@
+{{-- resources/views/components/alert.blade.php --}}
 @props([
     /**
      * Image source URL
