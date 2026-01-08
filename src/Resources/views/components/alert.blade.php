@@ -1,6 +1,7 @@
-@php
-    /** @var Lxl\LxlPackage\View\Components\Alert $Alert */
-@endphp
+{{--
+  Alert 元件
+  用於顯示不同類型的提示訊息，支援 info、success、warning、error 等類型
+--}}
 @props([
     /**
      * Alert 類型
@@ -19,5 +20,5 @@
     'message' => '這是一個提示訊息。',
 ])
 <div>
-    {{ $Alert->type }}、{{ $Alert->message }}
+    {{ $type }}、{{ $message }}
 </div>
