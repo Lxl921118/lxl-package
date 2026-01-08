@@ -1,6 +1,6 @@
 <?php
 
-namespace App\View\Components;
+namespace Lxl\LxlPackage\View\Components;
 
 use Closure;
 use Illuminate\Contracts\View\View;
@@ -11,7 +11,7 @@ use Illuminate\View\Component;
  * 
  * 用於顯示不同類型的提示訊息，支援 info、success、warning、error 等類型
  * 
- * @package App\View\Components
+ * @package Lxl\LxlPackage\View\Components
  */
 class Alert extends Component
 {
