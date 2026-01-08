@@ -1,4 +1,4 @@
-{{-- resources/views/components/alert.blade.php --}}
+{{-- resources/views/components/card-3d.blade.php --}}
 @props([
     /**
      * Image source URL
