@@ -11,5 +11,12 @@
             "Lxl\\LxlPackage\\": "src/"
         }
     },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Lxl\\LxlPackage\\Providers\\LxlPackageProvider"
+            ]
+        }
+    },
     "minimum-stability": "stable"
 }

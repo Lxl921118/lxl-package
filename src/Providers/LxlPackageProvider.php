@@ -26,7 +26,7 @@ class LxlPackageProvider extends ServiceProvider
         Blade::anonymousComponentPath(__DIR__ . '/../Resources/views', 'lxl-package');
 
         $this->publishes([
-            __DIR__ . '/../Resources/dist/app.css' => public_path('vendor/LxlPackage/app.css'),
+            __DIR__ . '/../Resources/dist/css/app.css' => public_path('vendor/LxlPackage/app.css'),
         ], 'lxl-package-assets');
     }
 }
