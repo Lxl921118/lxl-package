@@ -28,7 +28,7 @@ class LxlPackageProvider extends ServiceProvider
         // Blade::anonymousComponentPath(__DIR__ . '/../Resources/views/components', 'lxl-package');
 
          // 註冊類別元件命名空間（自動解析所有元件，支援巢狀目錄）
-        Blade::componentNamespace('Lxl\\LxlPackage\\View\\Components', 'lxl-package');
+        Blade::componentNamespace('Lxl921118\\LxlPackage\\View\\Components', 'lxl-package');
 
 
         // 發布資源
