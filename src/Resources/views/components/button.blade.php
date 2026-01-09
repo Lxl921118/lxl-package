@@ -18,4 +18,4 @@
     'btnText' => '按鈕',
 ])
 
-<button class="btn btn-{{ $btnStyle }}" type="{{ $btnType }}">{{ $btnText }}</button>
+<button class="btn btn-{{ $btnStyle }}" >{{ $btnText }}</button>

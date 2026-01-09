@@ -32,7 +32,7 @@ class LxlPackageProvider extends ServiceProvider
 
         // 發布資源
         $this->publishes([
-            __DIR__ . '/../Resources/dist/css/app.css' => public_path('vendor/LxlPackage/app.css'),
+            __DIR__ . '/../Resources/dist/css' => public_path('vendor/lxl-package/css'),
         ], 'lxl-package-assets');
     }
 }
