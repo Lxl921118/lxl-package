@@ -24,8 +24,8 @@ class LxlPackageProvider extends ServiceProvider
         // 載入視圖
         $this->loadViewsFrom(__DIR__ . '/../Resources/views', 'lxl-package');
 
-        // 註冊匿名元件（適用於 blade 檔案）
-        Blade::anonymousComponentPath(__DIR__ . '/../Resources/views/components', 'lxl-package');
+        // // 註冊匿名元件（適用於 blade 檔案）
+        // Blade::anonymousComponentPath(__DIR__ . '/../Resources/views/components', 'lxl-package');
 
          // 註冊類別元件命名空間（自動解析所有元件，支援巢狀目錄）
         Blade::componentNamespace('Lxl\\LxlPackage\\View\\Components', 'lxl-package');
